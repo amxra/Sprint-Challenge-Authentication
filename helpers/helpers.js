@@ -1,6 +1,6 @@
 const db = require('../database/dbConfig');
 
-
+module.exports = {add, find, findBy, findById, remove};
 
 function find (){
     return db('users').select('id', 'username', 'password')
@@ -28,4 +28,3 @@ function remove (){
 }
 
 
-module.export = {add, find, findBy, findById, remove}
